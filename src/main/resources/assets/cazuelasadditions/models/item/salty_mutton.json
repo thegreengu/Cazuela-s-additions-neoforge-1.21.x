@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "cazuelasadditions:item/salty_mutton"
+  }
+}

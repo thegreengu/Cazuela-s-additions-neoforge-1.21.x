@@ -1,5 +1,8 @@
 package net.cazuelafria.cazuelasadditions;
 
+import net.cazuelafria.cazuelasadditions.block.ModBlocks;
+import net.cazuelafria.cazuelasadditions.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -41,6 +44,9 @@ public class CazuelasAdditions {
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
@@ -48,8 +54,28 @@ public class CazuelasAdditions {
     }
 
     // Add the example block item to the building blocks tab
+    //osea que salga en el modo creativo
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(ModItems.SALT);
+            event.accept(ModItems.SALT_CRYSTAL);
+        }
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.SALT_BLOCK);
+        }
+        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
+            event.accept(ModItems.SALTY_BEEF);
+            event.accept(ModItems.SALTY_PORKCHOP);
+            event.accept(ModItems.SALTY_CHICKEN);
+            event.accept(ModItems.SALTY_MUTTON);
+            event.accept(ModItems.SALTY_RABBIT);
+            event.accept(ModItems.SALTY_COD);
+            event.accept(ModItems.SALTY_SALMON);
+            event.accept(ModItems.SALTY_POTATO);
+        }
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES){
+            event.accept(ModItems.SALT_SHAKER);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
