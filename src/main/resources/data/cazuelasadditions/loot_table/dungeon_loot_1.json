@@ -2,7 +2,7 @@
   "type": "minecraft:chest",
   "pools": [
     {
-      "rolls": 10,
+      "rolls": 9,
       "entries": [
         {
           "type": "minecraft:item",
@@ -12,7 +12,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:diamond",
-          "weight": 6,
+          "weight": 3,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -22,7 +22,18 @@
         },
         {
           "type": "minecraft:item",
-          "name": "cazuelasadditions:salty_beef",
+          "name": "minecraft:gunpowder",
+          "weight": 9,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cazuelasadditions:salt_crystal",
           "weight": 18
         },
         {
@@ -33,8 +44,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:diamond_block",
-          "weight": 1,
-          "functions": []
+          "weight": 1
         }
       ]
     }

@@ -19,9 +19,9 @@ public class ModItems {
             () -> new Item(new Item.Properties())
     );
 
-    public static final DeferredItem<Item> SALTY_BEEF = ITEMS.register(
-            "salty_beef",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.SALTY_BEEF))
+    public static final DeferredItem<Item> SALTY_STEAK = ITEMS.register(
+            "salty_steak",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.SALTY_STEAK))
     );
 
     public static final DeferredItem<Item> SALTY_PORKCHOP = ITEMS.register(
@@ -46,7 +46,7 @@ public class ModItems {
 
     public static final DeferredItem<Item> SALTY_COD = ITEMS.register(
             "salty_cod",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.SALTY_SALMON))
+            () -> new Item(new Item.Properties().food(ModFoodProperties.SALTY_COD))
     );
 
     public static final DeferredItem<Item> SALTY_SALMON = ITEMS.register(
@@ -59,10 +59,14 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoodProperties.SALTY_POTATO))
     );
 
+    public static final DeferredItem<Item> SALTY_GOLDEN_CARROT = ITEMS.register(
+            "salty_golden_carrot",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.SALTY_GOLDEN_CARROT))
+    );
+
     public static final DeferredItem<Item> SALT_SHAKER = ITEMS.register(
             "salt_shaker",
-            () -> new Item(new Item.Properties().durability(100))
-    );
+            () -> new SaltShakerItem(new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

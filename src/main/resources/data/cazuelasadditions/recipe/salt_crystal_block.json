@@ -3,16 +3,19 @@
   "category": "building",
   "key": {
       "#": {
-    "item": "cazuelasadditions:salt"
-        }
+    "item": "cazuelasadditions:salt_crystal"
+        },
+    "S": {
+      "item": "minecraft:stone"
+    }
   },
   "pattern": [
     "###",
-    "###",
+    "#S#",
     "###"
   ],
   "result": {
     "count": 1,
-    "id": "cazuelasadditions:salt_block"
+    "id": "cazuelasadditions:salt_crystal_block"
   }
 }

@@ -62,9 +62,10 @@ public class CazuelasAdditions {
         }
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.SALT_BLOCK);
+            event.accept(ModBlocks.SALT_CRYSTAL_BLOCK);
         }
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
-            event.accept(ModItems.SALTY_BEEF);
+            event.accept(ModItems.SALTY_STEAK);
             event.accept(ModItems.SALTY_PORKCHOP);
             event.accept(ModItems.SALTY_CHICKEN);
             event.accept(ModItems.SALTY_MUTTON);
@@ -72,6 +73,7 @@ public class CazuelasAdditions {
             event.accept(ModItems.SALTY_COD);
             event.accept(ModItems.SALTY_SALMON);
             event.accept(ModItems.SALTY_POTATO);
+            event.accept(ModItems.SALTY_GOLDEN_CARROT);
         }
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES){
             event.accept(ModItems.SALT_SHAKER);

@@ -1,7 +1,7 @@
 {
   "item.cazuelasadditions.salt": "Salt",
   "item.cazuelasadditions.salt_crystal": "Salt crystal",
-  "item.cazuelasadditions.salty_beef": "Salty beef",
+  "item.cazuelasadditions.salty_steak": "Salty steak",
   "item.cazuelasadditions.salty_porkchop": "Salty porkchop",
   "item.cazuelasadditions.salty_chicken": "Salty chicken",
   "item.cazuelasadditions.salty_mutton": "Salty mutton",
@@ -9,7 +9,9 @@
   "item.cazuelasadditions.salty_cod": "Salty cod",
   "item.cazuelasadditions.salty_salmon": "Salty salmon",
   "item.cazuelasadditions.salty_potato": "Salty potato",
+  "item.cazuelasadditions.salty_golden_carrot": "Salty golden carrot",
   "item.cazuelasadditions.salt_shaker": "Salt shaker",
 
-  "block.cazuelasadditions.salt_block": "Salt block"
+  "block.cazuelasadditions.salt_block": "Salt block",
+  "block.cazuelasadditions.salt_crystal_block": "Crystallized salt block"
 }

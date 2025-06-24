@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "cazuelasadditions:salt_crystal"
+  },
+  "result": {
+    "id": "cazuelasadditions:salt"
+  },
+  "experience": 1,
+  "cookingtime": 40
+}

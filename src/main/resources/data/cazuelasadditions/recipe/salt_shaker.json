@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#":{
+      "item": "cazuelasadditions:salt_block"
+    },
+    "I":{
+      "item": "minecraft:iron_trapdoor"
+    },
+    "G":{
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "pattern": [
+    "#I#",
+    "#G#",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cazuelasadditions:salt_shaker"
+  }
+}

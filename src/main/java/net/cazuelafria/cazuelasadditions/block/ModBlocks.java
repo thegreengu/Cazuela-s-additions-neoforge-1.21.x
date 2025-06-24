@@ -24,8 +24,11 @@ public class ModBlocks {
     //para añadir xp DropExperienceBlock(UniformInt.of(2, 4), antes de BlockBehaviour
     public static final DeferredBlock<Block> SALT_BLOCK = registerBlock(
             "salt_block",
-            () -> new Block(BlockBehaviour.Properties.of().strength(1.2F).sound(SoundType.GLASS)));
+            () -> new Block(BlockBehaviour.Properties.of().strength(1.2F).sound(SoundType.GRAVEL)));
 
+    public static final DeferredBlock<Block> SALT_CRYSTAL_BLOCK = registerBlock(
+            "salt_crystal_block",
+            () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(1.2F).sound(SoundType.STONE)));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

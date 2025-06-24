@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "cazuelasadditions:salt"
+          "name": "cazuelasadditions:salt_crystal"
         }
       ],
-      "rolls": 2.0
+      "rolls": 3.0
     }
   ],
-  "random_sequence": "cazuelasadditions:blocks/salt_block"
+  "random_sequence": "cazuelasadditions:blocks/salt_crystal_block"
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "cazuelasadditions:block/salt_crystal_block"
+  }
+}
