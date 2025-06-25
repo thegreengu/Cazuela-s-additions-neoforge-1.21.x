@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-      "cazuelasadditions:salt_block",
       "cazuelasadditions:salt_crystal_block"
   ]
 }
